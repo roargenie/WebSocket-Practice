@@ -16,6 +16,9 @@
 		F676D52F2A557337008E9400 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F676D52E2A557337008E9400 /* Then */; };
 		F676D5322A5580FB008E9400 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = F676D5312A5580FB008E9400 /* SwiftyJSON */; };
 		F676D5342A5582F7008E9400 /* SocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F676D5332A5582F7008E9400 /* SocketModel.swift */; };
+		F676D5372A558876008E9400 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = F676D5362A558876008E9400 /* Starscream */; };
+		F676D5392A55898C008E9400 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F676D5382A55898C008E9400 /* TabbarViewController.swift */; };
+		F676D53B2A558A20008E9400 /* StarScreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F676D53A2A558A20008E9400 /* StarScreamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,8 @@
 		F676D5222A554FDB008E9400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F676D5242A554FDB008E9400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F676D5332A5582F7008E9400 /* SocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketModel.swift; sourceTree = "<group>"; };
+		F676D5382A55898C008E9400 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		F676D53A2A558A20008E9400 /* StarScreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarScreamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +42,7 @@
 				F676D5322A5580FB008E9400 /* SwiftyJSON in Frameworks */,
 				F676D52C2A557313008E9400 /* SnapKit in Frameworks */,
 				F676D52F2A557337008E9400 /* Then in Frameworks */,
+				F676D5372A558876008E9400 /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +70,8 @@
 			children = (
 				F676D5162A554FDA008E9400 /* AppDelegate.swift */,
 				F676D5182A554FDA008E9400 /* SceneDelegate.swift */,
+				F676D5382A55898C008E9400 /* TabbarViewController.swift */,
+				F676D53A2A558A20008E9400 /* StarScreamViewController.swift */,
 				F676D51A2A554FDA008E9400 /* ViewController.swift */,
 				F676D5332A5582F7008E9400 /* SocketModel.swift */,
 				F676D51F2A554FDB008E9400 /* Assets.xcassets */,
@@ -93,6 +101,7 @@
 				F676D52B2A557313008E9400 /* SnapKit */,
 				F676D52E2A557337008E9400 /* Then */,
 				F676D5312A5580FB008E9400 /* SwiftyJSON */,
+				F676D5362A558876008E9400 /* Starscream */,
 			);
 			productName = WebSocketPractice;
 			productReference = F676D5132A554FDA008E9400 /* WebSocketPractice.app */;
@@ -126,6 +135,7 @@
 				F676D52A2A557313008E9400 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				F676D52D2A557337008E9400 /* XCRemoteSwiftPackageReference "Then" */,
 				F676D5302A5580FB008E9400 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				F676D5352A558876008E9400 /* XCRemoteSwiftPackageReference "Starscream" */,
 			);
 			productRefGroup = F676D5142A554FDA008E9400 /* Products */;
 			projectDirPath = "";
@@ -156,6 +166,8 @@
 				F676D51B2A554FDA008E9400 /* ViewController.swift in Sources */,
 				F676D5172A554FDA008E9400 /* AppDelegate.swift in Sources */,
 				F676D5342A5582F7008E9400 /* SocketModel.swift in Sources */,
+				F676D53B2A558A20008E9400 /* StarScreamViewController.swift in Sources */,
+				F676D5392A55898C008E9400 /* TabbarViewController.swift in Sources */,
 				F676D5192A554FDA008E9400 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +402,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		F676D5352A558876008E9400 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -407,6 +427,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F676D5302A5580FB008E9400 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		F676D5362A558876008E9400 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F676D5352A558876008E9400 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
