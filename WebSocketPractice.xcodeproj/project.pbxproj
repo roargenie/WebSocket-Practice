@@ -10,9 +10,12 @@
 		F676D5172A554FDA008E9400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F676D5162A554FDA008E9400 /* AppDelegate.swift */; };
 		F676D5192A554FDA008E9400 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F676D5182A554FDA008E9400 /* SceneDelegate.swift */; };
 		F676D51B2A554FDA008E9400 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F676D51A2A554FDA008E9400 /* ViewController.swift */; };
-		F676D51E2A554FDA008E9400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F676D51C2A554FDA008E9400 /* Main.storyboard */; };
 		F676D5202A554FDB008E9400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F676D51F2A554FDB008E9400 /* Assets.xcassets */; };
 		F676D5232A554FDB008E9400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F676D5212A554FDB008E9400 /* LaunchScreen.storyboard */; };
+		F676D52C2A557313008E9400 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F676D52B2A557313008E9400 /* SnapKit */; };
+		F676D52F2A557337008E9400 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F676D52E2A557337008E9400 /* Then */; };
+		F676D5322A5580FB008E9400 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = F676D5312A5580FB008E9400 /* SwiftyJSON */; };
+		F676D5342A5582F7008E9400 /* SocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F676D5332A5582F7008E9400 /* SocketModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,10 @@
 		F676D5162A554FDA008E9400 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F676D5182A554FDA008E9400 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F676D51A2A554FDA008E9400 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F676D51D2A554FDA008E9400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F676D51F2A554FDB008E9400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F676D5222A554FDB008E9400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F676D5242A554FDB008E9400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F676D5332A5582F7008E9400 /* SocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F676D5322A5580FB008E9400 /* SwiftyJSON in Frameworks */,
+				F676D52C2A557313008E9400 /* SnapKit in Frameworks */,
+				F676D52F2A557337008E9400 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +65,7 @@
 				F676D5162A554FDA008E9400 /* AppDelegate.swift */,
 				F676D5182A554FDA008E9400 /* SceneDelegate.swift */,
 				F676D51A2A554FDA008E9400 /* ViewController.swift */,
-				F676D51C2A554FDA008E9400 /* Main.storyboard */,
+				F676D5332A5582F7008E9400 /* SocketModel.swift */,
 				F676D51F2A554FDB008E9400 /* Assets.xcassets */,
 				F676D5212A554FDB008E9400 /* LaunchScreen.storyboard */,
 				F676D5242A554FDB008E9400 /* Info.plist */,
@@ -83,6 +89,11 @@
 			dependencies = (
 			);
 			name = WebSocketPractice;
+			packageProductDependencies = (
+				F676D52B2A557313008E9400 /* SnapKit */,
+				F676D52E2A557337008E9400 /* Then */,
+				F676D5312A5580FB008E9400 /* SwiftyJSON */,
+			);
 			productName = WebSocketPractice;
 			productReference = F676D5132A554FDA008E9400 /* WebSocketPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,11 @@
 				Base,
 			);
 			mainGroup = F676D50A2A554FDA008E9400;
+			packageReferences = (
+				F676D52A2A557313008E9400 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F676D52D2A557337008E9400 /* XCRemoteSwiftPackageReference "Then" */,
+				F676D5302A5580FB008E9400 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = F676D5142A554FDA008E9400 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +143,6 @@
 			files = (
 				F676D5232A554FDB008E9400 /* LaunchScreen.storyboard in Resources */,
 				F676D5202A554FDB008E9400 /* Assets.xcassets in Resources */,
-				F676D51E2A554FDA008E9400 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +155,7 @@
 			files = (
 				F676D51B2A554FDA008E9400 /* ViewController.swift in Sources */,
 				F676D5172A554FDA008E9400 /* AppDelegate.swift in Sources */,
+				F676D5342A5582F7008E9400 /* SocketModel.swift in Sources */,
 				F676D5192A554FDA008E9400 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F676D51C2A554FDA008E9400 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F676D51D2A554FDA008E9400 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F676D5212A554FDB008E9400 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +300,6 @@
 				INFOPLIST_FILE = WebSocketPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +327,6 @@
 				INFOPLIST_FILE = WebSocketPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +364,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F676D52A2A557313008E9400 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F676D52D2A557337008E9400 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		F676D5302A5580FB008E9400 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F676D52B2A557313008E9400 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F676D52A2A557313008E9400 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		F676D52E2A557337008E9400 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F676D52D2A557337008E9400 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		F676D5312A5580FB008E9400 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F676D5302A5580FB008E9400 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F676D50B2A554FDA008E9400 /* Project object */;
 }
